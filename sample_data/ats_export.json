@@ -1,0 +1,37 @@
+﻿[
+  {
+    "candidate_name": "John Doe",
+    "email_address": "john.doe@email.com",
+    "phone_number": "+15551234567",
+    "skills": ["Python", "JavaScript", "React", "Node.js", "AWS"],
+    "work_history": [
+      {
+        "company": "Acme Corp",
+        "title": "Senior Software Engineer",
+        "start_date": "2021-01",
+        "end_date": "present",
+        "description": "Led development of microservices architecture"
+      },
+      {
+        "company": "StartupXYZ",
+        "title": "Software Engineer",
+        "start_date": "2018-06",
+        "end_date": "2020-12",
+        "description": "Full-stack development"
+      }
+    ],
+    "education_history": [
+      {
+        "school": "MIT",
+        "degree": "Bachelor of Science",
+        "field_of_study": "Computer Science",
+        "graduation_year": "2018"
+      }
+    ],
+    "location": "San Francisco, CA, US",
+    "linkedin_url": "https://linkedin.com/in/johndoe",
+    "github_url": "https://github.com/johndoe",
+    "years_of_experience": 6,
+    "current_title": "Senior Software Engineer"
+  }
+]

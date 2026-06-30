@@ -1,0 +1,17 @@
+﻿{
+  "login": "johndoe",
+  "name": "John Doe",
+  "bio": "Senior Software Engineer | Open Source Enthusiast",
+  "email": "johndoe@github.com",
+  "location": "San Francisco, CA",
+  "blog": "https://johndoe.dev",
+  "html_url": "https://github.com/johndoe",
+  "public_repos": 42,
+  "repos": [
+    {"name": "awesome-project", "language": "Python", "stargazers_count": 150, "description": "An awesome project"},
+    {"name": "react-dashboard", "language": "JavaScript", "stargazers_count": 89, "description": "React dashboard"},
+    {"name": "go-microservice", "language": "Go", "stargazers_count": 34, "description": "Microservice in Go"},
+    {"name": "rust-cli", "language": "Rust", "stargazers_count": 12, "description": "CLI tool in Rust"},
+    {"name": "typescript-lib", "language": "TypeScript", "stargazers_count": 67, "description": "TypeScript library"}
+  ]
+}

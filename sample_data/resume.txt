@@ -1,0 +1,21 @@
+﻿Jane Smith
+jane.smith@techco.com
+(555) 987-6543
+New York, NY
+
+Summary
+Product Manager with 3 years of experience in product management.
+Skilled in Agile, Scrum, JIRA, data analysis.
+
+Experience
+TechCo - Product Manager
+June 2021 - Present
+- Led agile team of 8 developers.
+- Managed product backlog using JIRA.
+
+Education
+Stanford University - BS in Management Science
+2018 - 2021
+
+Skills
+Agile, Scrum, JIRA, Data Analysis, SQL, Python

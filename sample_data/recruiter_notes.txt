@@ -1,0 +1,16 @@
+﻿Candidate: John Doe
+Spoke with John on June 15. He's currently at Acme Corp as a Senior SWE.
+He's been there since Jan 2021. Before that, he was at StartupXYZ.
+Based in San Francisco. Has about 6 years of experience.
+Strong Python and JavaScript background. Knows React and Node.js well.
+Has experience with AWS and Docker. Interested in staff-level roles.
+Email: john.doe@email.com
+Phone: (555) 123-4567
+LinkedIn: https://linkedin.com/in/johndoe
+---
+Candidate: Jane Smith
+Product manager at TechCo. Based in New York.
+Email: jane.smith@techco.com
+Phone: 555-987-6543
+3 years of experience in product management.
+Skilled in Agile, Scrum, JIRA, data analysis.

@@ -1,0 +1,33 @@
+﻿{
+  "first_name": "John",
+  "last_name": "Doe",
+  "headline": "Senior Software Engineer at Acme Corp",
+  "summary": "Experienced software engineer with 6+ years building scalable web applications.",
+  "location": {"city": "San Francisco", "state": "California", "country": "United States"},
+  "profile_url": "https://linkedin.com/in/johndoe",
+  "positions": [
+    {
+      "company": "Acme Corp",
+      "title": "Senior Software Engineer",
+      "start_date": "January 2021",
+      "end_date": "Present",
+      "description": "Leading backend architecture and microservices development."
+    },
+    {
+      "company": "StartupXYZ",
+      "title": "Software Engineer",
+      "start_date": "June 2018",
+      "end_date": "December 2020",
+      "description": "Built full-stack features using React and Node.js."
+    }
+  ],
+  "education": [
+    {
+      "school": "Massachusetts Institute of Technology",
+      "degree": "BS",
+      "field_of_study": "Computer Science",
+      "end_year": "2018"
+    }
+  ],
+  "skills": ["Python", "JS", "ReactJS", "NodeJS", "Amazon Web Services", "Docker", "k8s"]
+}

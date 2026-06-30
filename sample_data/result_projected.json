@@ -1,0 +1,34 @@
+{
+  "candidates": [
+    {
+      "full_name": "John Doe",
+      "primary_email": "john.doe@email.com",
+      "phone": "+15551234567",
+      "skills": [
+        "Amazon Web Services",
+        "Docker",
+        "Go",
+        "JavaScript",
+        "Kubernetes",
+        "Node.js",
+        "Python",
+        "React",
+        "Rust",
+        "TypeScript"
+      ]
+    },
+    {
+      "full_name": "Jane Smith",
+      "primary_email": "jane.smith@techco.com",
+      "phone": "+15559876543",
+      "skills": [
+        "Agile",
+        "Data Analysis",
+        "JIRA",
+        "Product Management",
+        "Scrum"
+      ]
+    }
+  ],
+  "count": 2
+}

@@ -1,0 +1,380 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "dc16717f6d8bccde",
+      "full_name": "John Doe",
+      "emails": [
+        "john.doe@email.com",
+        "johndoe@github.com",
+        "johndoe@gmail.com"
+      ],
+      "phones": [
+        "+15551234567"
+      ],
+      "location": {
+        "city": "San Francisco",
+        "region": "CA",
+        "country": "US"
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/johndoe",
+        "github": "https://github.com/johndoe",
+        "portfolio": "https://johndoe.dev",
+        "other": []
+      },
+      "headline": "Senior Software Engineer",
+      "years_experience": 6.0,
+      "skills": [
+        {
+          "name": "Amazon Web Services",
+          "confidence": 0.96,
+          "sources": [
+            "ats_json",
+            "linkedin",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 0.715,
+          "sources": [
+            "linkedin",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Go",
+          "confidence": 0.55,
+          "sources": [
+            "github"
+          ]
+        },
+        {
+          "name": "JavaScript",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "github",
+            "linkedin",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Kubernetes",
+          "confidence": 0.65,
+          "sources": [
+            "linkedin"
+          ]
+        },
+        {
+          "name": "Node.js",
+          "confidence": 0.96,
+          "sources": [
+            "ats_json",
+            "linkedin",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 1.0,
+          "sources": [
+            "ats_json",
+            "github",
+            "linkedin",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "React",
+          "confidence": 0.96,
+          "sources": [
+            "ats_json",
+            "linkedin",
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Rust",
+          "confidence": 0.55,
+          "sources": [
+            "github"
+          ]
+        },
+        {
+          "name": "TypeScript",
+          "confidence": 0.55,
+          "sources": [
+            "github"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Acme Corp",
+          "title": "Senior Software Engineer",
+          "start": "2021-01",
+          "end": "present",
+          "summary": "Led development of microservices architecture"
+        },
+        {
+          "company": "StartupXYZ",
+          "title": "Software Engineer",
+          "start": "2018-06",
+          "end": "2020-12",
+          "summary": "Full-stack development"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Massachusetts Institute of Technology",
+          "degree": "BS",
+          "field": "Computer Science",
+          "end_year": "2018"
+        },
+        {
+          "institution": "MIT",
+          "degree": "Bachelor of Science",
+          "field": "Computer Science",
+          "end_year": "2018"
+        }
+      ],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "recruiter_csv",
+          "method": "normalize_name",
+          "original_value": "John Doe",
+          "normalized_value": "John Doe"
+        },
+        {
+          "field": "emails",
+          "source": "recruiter_csv",
+          "method": "normalize_email",
+          "original_value": "john.doe@email.com",
+          "normalized_value": "john.doe@email.com"
+        },
+        {
+          "field": "emails",
+          "source": "recruiter_csv",
+          "method": "normalize_email",
+          "original_value": "johndoe@gmail.com",
+          "normalized_value": "johndoe@gmail.com"
+        },
+        {
+          "field": "emails",
+          "source": "github",
+          "method": "normalize_email",
+          "original_value": "johndoe@github.com",
+          "normalized_value": "johndoe@github.com"
+        },
+        {
+          "field": "phones",
+          "source": "recruiter_csv",
+          "method": "normalize_phone, E.164",
+          "original_value": "+1 (555) 123-4567",
+          "normalized_value": "+15551234567"
+        },
+        {
+          "field": "location",
+          "source": "ats_json",
+          "method": "normalize_country",
+          "original_value": "{'city': 'San Francisco', 'region': 'CA', 'country': 'US'}",
+          "normalized_value": "{'city': 'San Francisco', 'region': 'CA', 'country': 'US'}"
+        },
+        {
+          "field": "links",
+          "source": "ats_json",
+          "method": "normalize_url",
+          "original_value": "{'type': 'linkedin'}",
+          "normalized_value": "https://linkedin.com/in/johndoe"
+        },
+        {
+          "field": "links",
+          "source": "ats_json",
+          "method": "normalize_url",
+          "original_value": "{'type': 'github'}",
+          "normalized_value": "https://github.com/johndoe"
+        },
+        {
+          "field": "links",
+          "source": "github",
+          "method": "normalize_url",
+          "original_value": "{'type': 'portfolio'}",
+          "normalized_value": "https://johndoe.dev"
+        },
+        {
+          "field": "headline",
+          "source": "recruiter_csv",
+          "method": "direct",
+          "original_value": "Senior Software Engineer",
+          "normalized_value": "Senior Software Engineer"
+        },
+        {
+          "field": "experience",
+          "source": "recruiter_csv",
+          "method": "normalize_date, deduplicate",
+          "original_value": "['Acme Corp', 'StartupXYZ']",
+          "normalized_value": "['Acme Corp', 'StartupXYZ']"
+        },
+        {
+          "field": "education",
+          "source": "recruiter_csv",
+          "method": "deduplicate",
+          "original_value": "['Massachusetts Institute of Technology', 'MIT']",
+          "normalized_value": "['Massachusetts Institute of Technology', 'MIT']"
+        },
+        {
+          "field": "skills",
+          "source": "recruiter_csv",
+          "method": "normalize_skill, union, confidence",
+          "original_value": "['Amazon Web Services', 'Docker', 'Go', 'JavaScript', 'Kubernetes', 'Node.js', 'Python', 'React', 'Rust', 'TypeScript']",
+          "normalized_value": "['Amazon Web Services', 'Docker', 'Go', 'JavaScript', 'Kubernetes', 'Node.js', 'Python', 'React', 'Rust', 'TypeScript']"
+        },
+        {
+          "field": "years_experience",
+          "source": "ats_json",
+          "method": "direct",
+          "original_value": "6.0",
+          "normalized_value": "6.0"
+        }
+      ],
+      "overall_confidence": 0.9035,
+      "field_confidence": {
+        "full_name": 0.9,
+        "emails": 0.99,
+        "phones": 0.9,
+        "location": 0.8,
+        "skills": 0.9,
+        "experience": 0.9,
+        "education": 0.9,
+        "headline": 0.9
+      }
+    },
+    {
+      "candidate_id": "ed53080aef22d113",
+      "full_name": "Jane Smith",
+      "emails": [
+        "jane.smith@techco.com"
+      ],
+      "phones": [
+        "+15559876543"
+      ],
+      "location": {
+        "city": "New York",
+        "region": "",
+        "country": ""
+      },
+      "links": {
+        "linkedin": "",
+        "github": "",
+        "portfolio": "",
+        "other": []
+      },
+      "headline": "Product Manager",
+      "years_experience": 3.0,
+      "skills": [
+        {
+          "name": "Agile",
+          "confidence": 0.4,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Data Analysis",
+          "confidence": 0.4,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "JIRA",
+          "confidence": 0.4,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Product Management",
+          "confidence": 0.4,
+          "sources": [
+            "recruiter_notes"
+          ]
+        },
+        {
+          "name": "Scrum",
+          "confidence": 0.4,
+          "sources": [
+            "recruiter_notes"
+          ]
+        }
+      ],
+      "experience": [],
+      "education": [],
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "recruiter_csv",
+          "method": "normalize_name",
+          "original_value": "Jane Smith",
+          "normalized_value": "Jane Smith"
+        },
+        {
+          "field": "emails",
+          "source": "recruiter_csv",
+          "method": "normalize_email",
+          "original_value": "jane.smith@techco.com",
+          "normalized_value": "jane.smith@techco.com"
+        },
+        {
+          "field": "phones",
+          "source": "recruiter_csv",
+          "method": "normalize_phone, E.164",
+          "original_value": "(555) 987-6543",
+          "normalized_value": "+15559876543"
+        },
+        {
+          "field": "location",
+          "source": "recruiter_notes",
+          "method": "direct",
+          "original_value": "{'city': 'New York', 'region': '', 'country': ''}",
+          "normalized_value": "{'city': 'New York', 'region': '', 'country': ''}"
+        },
+        {
+          "field": "headline",
+          "source": "recruiter_csv",
+          "method": "direct",
+          "original_value": "Product Manager",
+          "normalized_value": "Product Manager"
+        },
+        {
+          "field": "skills",
+          "source": "recruiter_csv",
+          "method": "normalize_skill, union, confidence",
+          "original_value": "['Agile', 'Data Analysis', 'JIRA', 'Product Management', 'Scrum']",
+          "normalized_value": "['Agile', 'Data Analysis', 'JIRA', 'Product Management', 'Scrum']"
+        },
+        {
+          "field": "years_experience",
+          "source": "recruiter_notes",
+          "method": "direct",
+          "original_value": "3.0",
+          "normalized_value": "3.0"
+        }
+      ],
+      "overall_confidence": 0.625,
+      "field_confidence": {
+        "full_name": 0.9,
+        "emails": 0.9,
+        "phones": 0.9,
+        "location": 0.4,
+        "skills": 0.9,
+        "experience": 0.0,
+        "education": 0.0,
+        "headline": 0.9
+      }
+    }
+  ],
+  "count": 2
+}
