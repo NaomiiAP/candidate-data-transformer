@@ -18,8 +18,45 @@ This tool solves the **candidate identity resolution and data fusion** problem: 
 
 ## Architecture
 
-![Pipeline Architecture Diagram](docs/architecture_diagram.png)
-
+```text
+                                 [ INPUT SOURCES ]
+  ┌──────────────────┬──────────────────┬─────────────────┬─────────────────┐
+  ▼                  ▼                  ▼                 ▼                 ▼
+Recruiter CSV     ATS JSON        LinkedIn JSON     GitHub Cache     Resumes / Notes
+(Priority 6)     (Priority 5)      (Priority 3)      (Priority 2)      (Priority 4/1)
+  │                  │                  │                 │                 │
+  └──────────────────┼──────────────────┼─────────────────┼─────────────────┘
+                     ▼
+             ┌───────────────┐
+             │ Ingest Layer  │ ──► Parse each format into raw CandidateRecords
+             └───────┬───────┘
+                     ▼
+             ┌───────────────┐
+             │ Normalize     │ ──► Phones (E.164), Countries (ISO), Dates (YYYY-MM),
+             └───────┬───────┘     Skills (Canonical), Names (Title Case), URLs
+                     ▼
+             ┌───────────────┐
+             │ Entity Match  │ ──► Disjoint Set (Union-Find) cluster groupings
+             └───────┬───────┘     on Email, Phone, URLs, and Name matching
+                     ▼
+             ┌───────────────┐
+             │ Merge Engine  │ ──► Source-priority conflict resolution &
+             └───────┬───────┘     Experience/Education list deduplication
+                     ▼
+             ┌───────────────┐
+             │ Scoring & Prov│ ──► Corroboration score calculation &
+             └───────┬───────┘     Full Provenance lineage logging
+                     ▼
+             ┌───────────────┐
+             │ Projection    │ ──► Apply runtime config (filter, rename,
+             └───────┬───────┘     and set missing fallback values)
+                     ▼
+             ┌───────────────┐
+             │ Validation    │ ──► Schema conform check (jsonschema validation)
+             └───────┬───────┘
+                     ▼
+             [ CANONICAL JSON ]
+```
 
 ### Pipeline Stages
 
