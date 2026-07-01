@@ -117,3 +117,6 @@ env/
 # sample_data/result_default.json
 # sample_data/result_projected.json
 # sample_data/large_result.json
+
+# Exclude submission PDFs
+*Eightfold.pdf
